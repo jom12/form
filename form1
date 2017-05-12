@@ -3,118 +3,111 @@
 <head>
 <title>form1</title>
 <style type="text/css">
-
 img {
   width: 150px;
   height: 40px;
-  margin-left: 200px;
-  position: relative;
-  top: 50px;
+  display: block;
+  margin-left: 0px auto;
+  
 }
 
 form {
-  height: 300px;
   background-color: white;
-  width: 250px;
-  position: absolute;
-  margin: 100px;
-  padding: 43px;
+  width: 400px;
+  margin:auto;
+  padding: 40px;
+  font-family: roboto,helvetica, sans-serif;
+  height: 420px;
+  margin-bottom:60px;
+  
 }
 
 input {
   display: block;
-  padding: 8px;
-  border-radius: 0px;
-  font-family: arial;
+  padding: 15px;
+  border-radius:0px;
   margin: 10px auto;
-  width: 100%
+  width: 100%;
+  margin-right: 5px;
+  
 }
 
 label {
   margin: 0px auto;
 }
+a{
+  color:white;
+}
 
 h1 {
-  margin-left: 60px;
+  margin-left: 120px;
   font-size: 35px;
   color: grey;
-  font-family: arial;
 }
 
-a {
-  color: white;
-  font-family: arial;
+body{
+  width: 100%;
+  margin:0;
+  padding:0;
+  padding top:60px;
+  background-color: #3399ff;  
 }
 
-.page {
-  width: 540px;
-  height: 600px;
-  background-color: #3399ff;
-  border: 1px black solid;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sign {
+button{
   background-color: green;
-  display: block;
-  padding: 10px;
-  border-radius: 0px;
-  font-family: arial;
-  margin: 10px auto;
+  display:block;
+  padding: 15px;
+  margin: auto;
   width: 100%;
   text-align: center;
-}
-
-.sign a {
-  text-decoration: none;
+  font-size:14px;
+  
 }
 
 .footer {
-  position: relative;
-  top: 500px;
-  margin-left: 120px;
+  width: 100%;
+  margin-top: 40px;
   color: white;
-  font-family: arial;
   font-size: 15px;
+  text-align: center;
 }
 
-.pass {
+.signupform a {
   color: grey;
-  position: relative;
-  bottom: 5px;
-  margin-left: 60px;
+  width: 100%;
   text-decoration: underline;
-  font-family: arial;
   font-size: 12px;
+  padding-right: 100px;
 }
+.signupform p {
+  text-align: center;
+
+}
+
 </style>
 <body>
-<div class="page">
-  <div>
     <img src="logo.png">
+    </div>
+    <form class="signupform">
+      <h1>Sign Up</h1>
+      <label for="email">Email</label>
+      <input type="text" name="Email" placeholder="ben123@gmail.com">
+      <label for="Pass">Password</label>
+      <input type="text" name="Password" placeholder="456gemsms">
+      <button type="submit">Sign Up</button>
+      <p>
+        <a href="#">Forget password?</a>
+      </p>
+    </form>
+    <div class="footer">
+      <p>Already have an account?
+        <a href="#">log in</a>
+      </p>
+    </div>
   </div>
-  <form>
-    <h1>Sign Up</h1>
-    <label for="username">Email</label>
-    <input type="text" name="Ename" placeholder="ben123@gmail.com">
-    <label for="Pname">Password</label>
-    <input type="email" name="email" placeholder="456gemsms">
-    <div class="sign">
-      <a href="#">sign up</a>
-    </div>
-    <div class="pass">
-      <p>Forget password?</p>
-    </div>
-  </form>
-  <div class="footer">
-    <p>Already have an account?
-      <a href="#">log in</a>
-    </p>
-</div>
-</div>
-</div>
+  </div>
 </body>
+</html>
 
 
 
